@@ -1,1 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accessibility Information | LUX</title>
+  <meta name="description" content="Accessibility information for visitors to LUX: audio description, hearing loop, large print guides, step-free access, accessible toilets, and contact details." />
+  <meta name="robots" content="noindex,follow"><!-- Remove this line if you want search engines to index -->
+  <style>
+    :root { --max: 70ch; }
+    html { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; }
+    body { margin: 0; background: #fff; color: #111; }
+    header, main, footer { padding: 1.25rem; }
+    .wrap { max-width: var(--max); margin: 0 auto; }
+    h1, h2 { line-height: 1.3; }
+    ul { padding-left: 1.2rem; }
+    a { color: #004080; text-underline-offset: 0.15em; }
+    a:focus, a:hover { outline: 2px solid #000; outline-offset: 2px; }
+    @media print { a[href^="http"]::after { content: " (" attr(href) ")"; } }
+    a.skip { position: absolute; left: -9999px; top: 0; background: #000; color: #fff; padding: .5rem .75rem; }
+    a.skip:focus { left: .75rem; top: .75rem; z-index: 1000; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
+  <header role="banner">
+    <div class="wrap">
+      <h1>Accessibility Information</h1>
+      <p>This page provides information about access support, facilities, and contact details for visitors to LUX.</p>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <section class="wrap" aria-labelledby="visual-hearing">
+      <h2 id="visual-hearing">Support for visitors with visual and hearing needs</h2>
+      <ul>
+        <li>The film includes Audio Description — please ask Front of House staff for assistance.</li>
+        <li>Hearing loops are available.</li>
+        <li>Large print guides and magnifying glasses are available.</li>
+      </ul>
+    </section>
+
+    <section class="wrap" aria-labelledby="building">
+      <h2 id="building">Building access</h2>
+      <ul>
+        <li>Our building is step-free.</li>
+        <li>Accessible toilets are available.</li>
+      </ul>
+    </section>
+
+    <section class="wrap" aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>For more information or to discuss access needs, email: 
+        <a href="mailto:events@lux.org.uk">events@lux.org.uk</a>
+      </p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="wrap">
+      <p>LUX, Waterlow Park — © <span id="year">2025</span> LUX</p>
+      <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+    </div>
+  </footer>
+</body>
+</html>
