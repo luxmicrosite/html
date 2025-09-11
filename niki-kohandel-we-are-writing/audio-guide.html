@@ -1,1 +1,58 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Audio Guide — Space Orientation & Exhibition | LUX</title>
+  <meta name="description" content="Audio guide for Niki Kohandel’s exhibition We Are Writing, including space orientation and artwork descriptions." />
+  <meta name="robots" content="noindex,follow"><!-- remove if you want this indexed -->
+  <style>
+    :root { --max: 70ch; }
+    html { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; }
+    body { margin: 0; background: #fff; color: #111; }
+    header, main, footer { padding: 1.25rem; }
+    .wrap { max-width: var(--max); margin: 0 auto; }
+    h1, h2 { line-height: 1.3; }
+    a { color: #004080; text-underline-offset: 0.15em; }
+    a:focus, a:hover { outline: 2px solid #000; outline-offset: 2px; }
+    figure { margin: 1rem 0; }
+    figcaption { font-size: 0.95rem; margin-bottom: 0.5rem; }
+    @media print { a[href^="http"]::after { content: " (" attr(href) ")"; } }
+    a.skip { position: absolute; left: -9999px; top: 0; background: #000; color: #fff; padding: .5rem .75rem; }
+    a.skip:focus { left: .75rem; top: .75rem; z-index: 1000; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header role="banner">
+    <div class="wrap">
+      <h1>Audio Guide — Space Orientation & Exhibition</h1>
+      <p>This is the audio guide for the exhibition <em>We Are Writing</em> by Niki Kohandel. Please play the audio file below.</p>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <section class="wrap" aria-labelledby="audio-guide">
+      <h2 id="audio-guide">Listen to the guide</h2>
+      <figure>
+        <figcaption>Audio Guide (Space Orientation & Exhibition)</figcaption>
+        <audio controls preload="none">
+          <source src="PATH-TO-YOUR-AUDIO-FILE.mp3" type="audio/mpeg" />
+          Your device does not support embedded audio. 
+          <a href="PATH-TO-YOUR-AUDIO-FILE.mp3">Download the MP3</a>.
+        </audio>
+      </figure>
+      <p class="note">Replace <code>PATH-TO-YOUR-AUDIO-FILE.mp3</code> with the link to your final audio file before publishing.</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="wrap">
+    
+      <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+    </div>
+  </footer>
+</body>
+</html>
