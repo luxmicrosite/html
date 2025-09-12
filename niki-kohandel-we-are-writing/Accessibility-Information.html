@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Accessibility Information | LUX</title>
-  <meta name="description" content="Accessibility information for visitors to LUX: audio description, hearing loop, large print guides, step-free access, accessible toilets, and contact details." />
+  <meta name="description" content="Accessibility information and screening schedule for visitors to LUX: audio description, hearing loop, large print guides, step-free access, accessible toilets, and contact details." />
   <meta name="robots" content="noindex,follow"><!-- Remove this line if you want search engines to index -->
   <style>
     :root { --max: 70ch; }
@@ -19,6 +19,7 @@
     @media print { a[href^="http"]::after { content: " (" attr(href) ")"; } }
     a.skip { position: absolute; left: -9999px; top: 0; background: #000; color: #fff; padding: .5rem .75rem; }
     a.skip:focus { left: .75rem; top: .75rem; z-index: 1000; }
+    .ad { font-style: italic; color: #004080; }
   </style>
 </head>
 <body>
@@ -48,6 +49,19 @@
       </ul>
     </section>
 
+    <section class="wrap" aria-labelledby="screening">
+      <h2 id="screening">Screening Schedule</h2>
+      <p>The film is screened in 20-minute slots during the event. Sessions with <span class="ad">Audio Description</span> are clearly marked.</p>
+      <ul>
+        <li>6:20 – 6:40&nbsp;pm</li>
+        <li>6:20 – 6:40&nbsp;pm <span class="ad">(with Audio Description)</span></li>
+        <li>6:40 – 7:00&nbsp;pm</li>
+        <li>7:00 – 7:20&nbsp;pm <span class="ad">(with Audio Description)</span></li>
+        <li>7:20 – 7:40&nbsp;pm</li>
+        <li>7:40 – 8:00&nbsp;pm <span class="ad">(with Audio Description)</span></li>
+      </ul>
+    </section>
+
     <section class="wrap" aria-labelledby="contact">
       <h2 id="contact">Contact</h2>
       <p>For more information or to discuss access needs, email: 
@@ -55,6 +69,5 @@
       </p>
     </section>
   </main>
-
 </body>
 </html>
